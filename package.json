@@ -1,5 +1,5 @@
 {
-  "name": "amazon-terraform-setup-action",
+  "name": "docker-ecr-action",
   "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
@@ -21,6 +21,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/awazevr/amazon-terraform-setup-action.git"
+    "url": "https://github.com/awazevr/docker-ecr-action.git"
   }
 }
