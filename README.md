@@ -5,8 +5,11 @@
 
 | Name               | Description                              | Type           | Default | Required |
 | ------------------ | ---------------------------------------- | -------------- | ------- | -------- |
-| `example_required` | An example of a required input variable  | `list(string)` | -       | yes      |
-| `example_optional` | An example of an optional input variable | `map(string)`  | `{}`    | no       |
+| `aws-region`       | AWS region of your aws account           | `string`       | -       | yes      |
+| `aws-account-id`   | AWS account id                           | `string`       | -       | yes      |
+| `application-name` | Name of application/ECR name             | `string`       | -       | yes      |
+| `dockerfile-path`  | Path to Dockerfile                       | `string`       | `.`     | no       |
+| `mutable-ecr`      | Determine the ECR's mutability           | `bool`         | `true`  | no       |
 
 
 ## Outputs
