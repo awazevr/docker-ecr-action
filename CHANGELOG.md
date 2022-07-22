@@ -1,3 +1,10 @@
+# 1.0.0 (2022-07-22)
+
+
+### Bug Fixes
+
+* first init ([263d80f](https://github.com/awazevr/docker-ecr-action/commit/263d80ffebb6d7863f4db7c08e3ac37e70c7175d))
+
 ## [1.0.7](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.6...v1.0.7) (2022-07-06)
 
 
