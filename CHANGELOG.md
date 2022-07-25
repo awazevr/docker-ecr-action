@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/awazevr/docker-ecr-action/compare/v1.0.2...v1.0.3) (2022-07-25)
+
+
+### Bug Fixes
+
+* added path/context as an input ([4a49a3e](https://github.com/awazevr/docker-ecr-action/commit/4a49a3e48edf863c78929942c8ec344b8d0716a1))
+
 ## [1.0.2](https://github.com/awazevr/docker-ecr-action/compare/v1.0.1...v1.0.2) (2022-07-25)
 
 
