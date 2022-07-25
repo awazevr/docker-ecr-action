@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/awazevr/docker-ecr-action/compare/v1.0.1...v1.0.2) (2022-07-25)
+
+
+### Bug Fixes
+
+* removed tag type=sha ([3269333](https://github.com/awazevr/docker-ecr-action/commit/3269333221a54396152a096c2cc575e4856e984d))
+
 ## [1.0.1](https://github.com/awazevr/docker-ecr-action/compare/v1.0.0...v1.0.1) (2022-07-22)
 
 # 1.0.0 (2022-07-22)
