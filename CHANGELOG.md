@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/awazevr/docker-ecr-action/compare/v1.0.5...v1.0.6) (2022-07-26)
+
+
+### Bug Fixes
+
+* added mutable-ecr step check ([b72e8d4](https://github.com/awazevr/docker-ecr-action/commit/b72e8d4ea8daf25631f263d84a7daf22c1ca7351))
+
 ## [1.0.5](https://github.com/awazevr/docker-ecr-action/compare/v1.0.4...v1.0.5) (2022-07-26)
 
 
