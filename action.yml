@@ -65,29 +65,38 @@ runs:
 
     - name: Docker meta
       if: ${{ inputs.mutable-ecr }} != true
-      id: docker-meta
+      id: docker-meta-non-mutable
       uses: docker/metadata-action@v3
       with:
         images: ${{ steps.login-ecr.outputs.registry }}/${{ inputs.application-name }}
         # flavor: latest=true
         tags: type=sha
 
-    - name: Docker meta
-      if: ${{ inputs.mutable-ecr }} == true
-      id: docker-meta
-      uses: docker/metadata-action@v3
-      with:
-        images: ${{ steps.login-ecr.outputs.registry }}/${{ inputs.application-name }}
-        flavor: latest=true
-
-
     - name: Build and push
+      if: ${{ inputs.mutable-ecr }} != true
       uses: docker/build-push-action@v2
       with:
         context: ${{ inputs.path }}
         file: ${{ inputs.dockerfile-path }}
         push: true
-        tags: ${{ steps.docker-meta.outputs.tags }}
+        tags: ${{ steps.docker-meta-non-mutable.outputs.tags }}
 
+
+    - name: Docker meta
+      if: ${{ inputs.mutable-ecr }} == true
+      id: docker-meta-mutable
+      uses: docker/metadata-action@v3
+      with:
+        images: ${{ steps.login-ecr.outputs.registry }}/${{ inputs.application-name }}
+        flavor: latest=true
+
+    - name: Build and push
+      if: ${{ inputs.mutable-ecr }} == true
+      uses: docker/build-push-action@v2
+      with:
+        context: ${{ inputs.path }}
+        file: ${{ inputs.dockerfile-path }}
+        push: true
+        tags: ${{ steps.docker-meta-mutable.outputs.tags }}
 
 
