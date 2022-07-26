@@ -39,14 +39,9 @@ runs:
   using: "composite"
   steps: 
       
-    - name: starting setup 
+    - name: Starting Setup 
       shell: bash
       run: echo "Starting composite action"
-
-    # - name: Setup Node.js
-    #   uses: actions/setup-node@v1
-    #   with:
-    #     node-version: '14.17.5'
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
