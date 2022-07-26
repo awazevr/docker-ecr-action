@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/awazevr/docker-ecr-action/compare/v1.0.7...v1.0.8) (2022-07-26)
+
+
+### Bug Fixes
+
+* fixed conditions ([d5200db](https://github.com/awazevr/docker-ecr-action/commit/d5200db6b0a0f28abb33b5336619aac838636d0b))
+
 ## [1.0.7](https://github.com/awazevr/docker-ecr-action/compare/v1.0.6...v1.0.7) (2022-07-26)
 
 
