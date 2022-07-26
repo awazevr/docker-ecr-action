@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/awazevr/docker-ecr-action/compare/v1.0.4...v1.0.5) (2022-07-26)
+
+
+### Bug Fixes
+
+* using latest ([d14dc8d](https://github.com/awazevr/docker-ecr-action/commit/d14dc8d87563e393156818d211ca1c99d511e007))
+
 ## [1.0.4](https://github.com/awazevr/docker-ecr-action/compare/v1.0.3...v1.0.4) (2022-07-26)
 
 
