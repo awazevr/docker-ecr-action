@@ -64,7 +64,7 @@ runs:
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Docker meta
-      if: ${{ inputs.mutable-ecr }} != true
+      if: ${{ inputs.mutable-ecr != true }} 
       id: docker-meta-non-mutable
       uses: docker/metadata-action@v3
       with:
@@ -73,7 +73,7 @@ runs:
         tags: type=sha
 
     - name: Build and push
-      if: ${{ inputs.mutable-ecr }} != true
+      if: ${{ inputs.mutable-ecr != true }} 
       uses: docker/build-push-action@v2
       with:
         context: ${{ inputs.path }}
@@ -83,7 +83,7 @@ runs:
 
 
     - name: Docker meta
-      if: ${{ inputs.mutable-ecr }} == true
+      if: ${{ inputs.mutable-ecr == true }} 
       id: docker-meta-mutable
       uses: docker/metadata-action@v3
       with:
@@ -91,7 +91,7 @@ runs:
         flavor: latest=true
 
     - name: Build and push
-      if: ${{ inputs.mutable-ecr }} == true
+      if: ${{ inputs.mutable-ecr == true }} 
       uses: docker/build-push-action@v2
       with:
         context: ${{ inputs.path }}
