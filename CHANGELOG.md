@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/awazevr/docker-ecr-action/compare/v1.0.3...v1.0.4) (2022-07-26)
+
+
+### Bug Fixes
+
+* default path updated ([22cf127](https://github.com/awazevr/docker-ecr-action/commit/22cf127d7f37d42e5c15fe466786949a0cd80eda))
+
 ## [1.0.3](https://github.com/awazevr/docker-ecr-action/compare/v1.0.2...v1.0.3) (2022-07-25)
 
 
