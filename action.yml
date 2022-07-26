@@ -64,13 +64,22 @@ runs:
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Docker meta
-      if: ${{ inputs.mutable-ecr }} == true
+      if: ${{ inputs.mutable-ecr }} != true
       id: docker-meta
       uses: docker/metadata-action@v3
       with:
         images: ${{ steps.login-ecr.outputs.registry }}/${{ inputs.application-name }}
         # flavor: latest=true
         tags: type=sha
+
+    - name: Docker meta
+      if: ${{ inputs.mutable-ecr }} == true
+      id: docker-meta
+      uses: docker/metadata-action@v3
+      with:
+        images: ${{ steps.login-ecr.outputs.registry }}/${{ inputs.application-name }}
+        flavor: latest=true
+
 
     - name: Build and push
       uses: docker/build-push-action@v2
