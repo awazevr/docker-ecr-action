@@ -69,8 +69,8 @@ runs:
       uses: docker/metadata-action@v3
       with:
         images: ${{ steps.login-ecr.outputs.registry }}/${{ inputs.application-name }}
-        flavor: latest=true
-    #     tags: type=sha
+        # flavor: latest=true
+        tags: type=sha
 
     - name: Build and push
       uses: docker/build-push-action@v2
