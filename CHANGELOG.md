@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/awazevr/docker-ecr-action/compare/v1.0.8...v1.0.9) (2022-07-26)
+
+
+### Bug Fixes
+
+* tidy up workflow ([deed812](https://github.com/awazevr/docker-ecr-action/commit/deed8121d00b59731fa3b87dbb7a93652e785a61))
+
 ## [1.0.8](https://github.com/awazevr/docker-ecr-action/compare/v1.0.7...v1.0.8) (2022-07-26)
 
 
